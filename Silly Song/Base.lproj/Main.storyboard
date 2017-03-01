@@ -47,6 +47,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="displayLyrics:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="vCJ-az-ZVt"/>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="ejr-GL-Uos"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,10 +64,14 @@
                             <constraint firstItem="aew-Gt-vnu" firstAttribute="top" secondItem="jF2-Kp-ivh" secondAttribute="bottom" constant="30" id="zRb-0t-Oqb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lyricsView" destination="rjm-nd-alc" id="zKi-ib-S33"/>
+                        <outlet property="nameField" destination="aew-Gt-vnu" id="ADj-7S-BeG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+            <point key="canvasLocation" x="167" y="120"/>
         </scene>
     </scenes>
 </document>
